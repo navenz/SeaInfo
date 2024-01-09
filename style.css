@@ -1,11 +1,11 @@
-body{
+body {
     text-align: center;
     height: 100vh;
     margin: 0;
     padding: 0;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +13,7 @@ header{
     background-color: #FBF8BE;
 }
 
-.logo{
+.logo {
     margin-left: 130px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -22,13 +22,13 @@ header{
 
 }
 
-.extras{
+.extras {
     margin-left: auto;
     text-decoration: none;
     list-style: none;
 }
 
-ul{
+ul {
     text-decoration: none;
     list-style: none;
     margin: 0;
@@ -36,97 +36,96 @@ ul{
     gap: 16px;
     display: flex;
 }
-li{
+
+li {
     list-style: none;
     text-decoration: none;
 }
 
-.container1{
-    display: flex;
-    align-items: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin-bottom: 2px;
+.vidpart {
+    width: 100vw;
 }
 
-.conteudo1{
-    text-align: center;
+.vidpart-container {
+    display: flex;
+    align-items: center;
+    padding: 100px;
+}
+
+.vidpart-content {
+    text-align: left;
     display: flex;
     background-color: hsla(209, 100%, 30%, 0.5);
     padding: 40px;
-    flex-direction: column;
-    margin: auto;
-    max-height: 500px;
+    flex-direction: row;
     border-radius: 30px;
 }
 
-h1{
+.vidpart-text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.vidpart-title {
     font-size: 60px;
-    right: 650px;
-    position: relative;
-    bottom: 50px;
     font-family: 'Rubik', sans-serif;
     color: #FBF8BE;
 }
 
-p{
+.vidpart-subtitle {
     font-family: 'DM Sans', sans-serif;
-    display:flex;
+    display: flex;
     margin: auto;
     font-size: 35px;
-    position: relative;
-    right: 540px;
-    width: 440px;
-    bottom: 60px;
-    text-align:left;
+    text-align: left;
     color: #EEA47F;
 }
 
-button{
+.vidpart-button {
     border: none;
     background: #FBF8BE;
     padding: 8px 20px;
-    position: relative;
-    margin-left: 45px;
     width: 200px;
     font-size: large;
     border-radius: 15px;
 }
 
-.conteudo2{
+.vidpart-button:hover {
+    cursor: pointer;
+    background: #b9b9b9;
+}
+
+.vidpart-image {
     display: flex;
     position: relative;
-    bottom: 420px;
-    margin-left: 850px;
-}
-
-.conteudo2 img{
     display: flex;
-    margin: 50px;
     width: 650px;
     height: 400px;
-    border: solid #FBF8BE 5px ;
+    border: solid #FBF8BE 5px;
 }
 
+
 #videofundo {
-    position: fixed; 
+    position: fixed;
     right: 0;
     bottom: 0;
-    min-width: 100%; 
-    min-height: 100%; 
+    min-width: 100%;
+    min-height: 100%;
     width: auto;
     height: auto;
     z-index: -1;
-  }
+}
 
-h2{
+h2 {
     font-size: 40px;
     position: absolute;
     font-family: 'Rubik', sans-serif;
     color: #FBF8BE;
 }
 
-.infocards{
+.infocards {
     display: flex;
     background: #00539C;
     height: 700px;
@@ -136,7 +135,7 @@ h2{
     justify-content: center;
 }
 
-.card{
+.card {
     padding-top: 130px;
     display: flex;
     flex-direction: column;
@@ -146,15 +145,16 @@ h2{
 
 }
 
-.imgC img{
+.imgC img,
+.imgC {
     height: 280px;
     width: 100%;
     border-radius: 20px;
     border: solid seagreen;
 }
 
-.primc{
-    color:#ffffff;
+.primc {
+    color: #ffffff;
     border: none;
     padding-top: 10px;
     font-size: large;
@@ -163,24 +163,26 @@ h2{
     width: 250px;
 }
 
-.container2{
+.container2 {
+    padding-inline: 250px;
     background: #aad1f3;
     height: 400px;
     display: flex;
     flex-direction: column;
 }
 
-.conjunto{
+.conjunto {
     padding-top: 20px;
     margin: auto;
 }
 
-.frase{
+.frase {
     width: 1300px;
     font-size: 50px;
     text-align: justify;
 }
-.sig{
+
+.sig {
 
     font-size: 30px;
     position: relative;
@@ -188,14 +190,14 @@ h2{
     padding-bottom: 15px;
 }
 
-.container3{
+.container3 {
     background: #00539C;
     height: 400px;
     display: flex;
     width: 100%;
 }
 
-.conteudo3{
+.conteudo3 {
     display: flex;
     background-color: #FBF8BE;
     margin: auto;
@@ -206,7 +208,7 @@ h2{
     flex-direction: column;
 }
 
-h3{
+h3 {
     display: flex;
     font-size: 30px;
     padding-left: 50px;
@@ -215,9 +217,10 @@ h3{
     justify-content: flex-start;
     color: #e78554;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
-    position:static;
+    position: static;
 }
-.minitexto{
+
+.minitexto {
     font-size: 20px;
     display: flex;
     padding-left: 52px;
@@ -225,7 +228,7 @@ h3{
     position: static;
 }
 
-.btn-primary{
+.btn-primary {
     color: black;
     display: flex;
     justify-content: flex-end;
@@ -245,14 +248,11 @@ h3{
     font-family: 'Rubik', sans-serif;
 }
 
-footer{
-    background:#FBF8BE;
+footer {
+    background: #FBF8BE;
     height: 100px;
+    width: 100vw;
     display: flex;
     justify-content: center;
-    align-content: center;
-    text-align: center;
-    padding-top: 70px;
-    padding-bottom: 0%;
-
+    text-justify: center;
 }
